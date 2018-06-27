@@ -12,7 +12,7 @@ class UserFavoriteController extends Controller
         return redirect()->back();
     }
     
-    public function destroy(Request $id)
+    public function destroy($id)
     {
         \Auth::user()->unfavorite($id);
         return redirect()->back();

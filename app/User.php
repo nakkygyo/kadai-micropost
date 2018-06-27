@@ -107,7 +107,7 @@ class User extends Authenticatable
         
         if ($exist)
         {
-            $this->favotites()->detach($postId);
+            $this->favorites()->detach($postId);
             return true;
             
         } else {
